@@ -1,0 +1,51 @@
+/*
+Responsive Aeon Grid System v1.0.0
+Designed & Built by Fernando Monteiro, http://www.newaeonweb.com.br 
+Licensed under MIT license, http://opensource.org/licenses/mit-license.php
+Base stylesheet with CSS Reset, grid and progressive responsiveness
+*/
+/* Simple reset just for Body element  */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Minimal styling to center the editor in this sample */
+.container_box {
+  margin: 0 auto;
+  display: flex;
+  height: auto;
+  z-index: 20;
+  top: 2px;
+  /*ckeditor config*/
+}
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+.ck-rounded-corners .ck.ck-balloon-panel, .ck.ck-balloon-panel.ck-rounded-corners {
+    z-index: 10055 !important;
+}
+
+
+
+
+/* https://github.com/ckeditor/ckeditor5-table/issues/154. */
+
+.ck-content .table {
+   width: unset;
+}
+

@@ -1,0 +1,10 @@
+.model{
+  width: 80%;
+  background: #7A7272;
+  height: 50vw;
+  position: absolute;
+  z-index: 990;
+  left: 50%;
+  top: 10vw;;
+  transform: translate(-50%)
+}

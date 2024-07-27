@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .gallery {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+      -webkit-column-width: 33%;
+      -moz-column-width: 33%;
+      column-width: 33%;
+    }
+
+    .gallery .pics {
+      -webkit-transition: all 350ms ease;
+      transition: all 350ms ease;
+               position: relative;
+
+    }
+    
+        .gallery .pics button{
+          position: absolute;
+          bottom: 4px;
+          left:50%;
+          transform: translate(-50%,0%);
+          padding: 0.5vw 2vw;
+          outline: none;
+          border-radius: 15px;
+          border: none;
+          color: #000000;
+          background: #EF3A88;
+}
+    
+
+    .gallery .animation {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+
+    @media (max-width: 450px) {
+      .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+      }
+         .gallery .pics button{
+          bottom: 7px;
+          left:50%;
+          transform: translate(-50%,0%);
+          padding: 2vw 3.5vw;
+          outline: none;
+          border-radius: 15px;
+          border: none;
+          color: #000000;
+          background: #EF3A88;
+}
+    
+    }
+
+    @media (max-width: 400px) {
+      .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+      }
+      
+      
+      
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+
+
+  <div class="gallery" id="gallery">
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="/uploads1707719098_IMG_20240212_090856.jpg" alt="Card image cap">
+    </div>
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.webp" alt="Card image cap">
+    </div>
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.webp" alt="Card image cap">
+    </div>
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).webp" alt="Card image cap">
+    </div>
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="/uploads1707719098_IMG_20240212_090856.jpg" alt="Card image cap">
+      <button>DELETE</button>
+    </div>
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.webp" alt="Card image cap">
+    </div>
+  </div>
+  <!-- Grid row -->
+
+
+
+
+
+
+
+
+</body>
+
+</html>
